@@ -8,11 +8,11 @@ description = "PA-Star: Parallel A-Star for Multiple Sequence Alignment"
 
 [[bin]]
 name = "msa_astar"
-path = "src/bin/msa_astar.rs"
+path = "src/msa_astar.rs"
 
 [[bin]]
 name = "msa_pastar"
-path = "src/bin/msa_pastar.rs"
+path = "src/msa_pastar.rs"
 
 [dependencies]
 clap = { version = "4.4", features = ["derive"] }

@@ -49,7 +49,7 @@ pub fn backtrace<const N: usize>(
     backtrace_print_similarity(&alignments);
     
     // Write to file if requested
-    if let Some(ref filename) = output_file {
+    if let Some(filename) = output_file {
         if let Err(e) = backtrace_print_fasta_file::<N>(&alignments, filename) {
             eprintln!("Error writing FASTA file: {}", e);
         }

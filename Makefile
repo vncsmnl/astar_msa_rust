@@ -15,9 +15,9 @@ release:
 	@echo "Building in release mode..."
 	cargo build --release
 	@echo "Copying binaries to bin/..."
-	@if not exist bin mkdir bin
-	@copy target\release\msa_astar.exe bin\msa_astar 2>nul || echo Built msa_astar
-	@copy target\release\msa_pastar.exe bin\msa_pastar 2>nul || echo Built msa_pastar
+	@mkdir -p bin
+	@cp target/release/msa_astar bin/msa_astar 2>/dev/null || echo Built msa_astar
+	@cp target/release/msa_pastar bin/msa_pastar 2>/dev/null || echo Built msa_pastar
 
 # Run tests
 test:
@@ -33,7 +33,7 @@ test-verbose:
 clean:
 	@echo "Cleaning build artifacts..."
 	cargo clean
-	@if exist bin rmdir /s /q bin
+	@rm -rf bin
 
 # Run serial A-Star on test file
 run-astar:

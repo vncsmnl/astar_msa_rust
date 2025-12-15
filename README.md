@@ -18,7 +18,7 @@ PA-Star is a software that performs a parallel A-Star search to solve the Multip
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/vncsmnl/astar_msa_rust
 cd astar_msa_rust
 
 # Build in release mode (optimized)
@@ -26,7 +26,7 @@ make release
 # or
 cargo build --release
 
-# Binaries will be copied to bin/ (without .exe extension)
+# Binaries will be copied to bin/
 # Also available in target/release/
 ```
 

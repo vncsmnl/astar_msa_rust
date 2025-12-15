@@ -1,5 +1,5 @@
 /*!
- * \author Daniel Sundfeld
+ * \author Vinícius Manoel
  * \copyright MIT License
  *
  * \brief Main entry point for parallel A-Star MSA
